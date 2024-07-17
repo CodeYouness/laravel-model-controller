@@ -1,8 +1,9 @@
 main#main-app {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 
-    div {
-        width: calc((100% / 3) - 0.1rem);
+    div.card {
+        width: calc((100% / 3) - 2rem);
     }
 }

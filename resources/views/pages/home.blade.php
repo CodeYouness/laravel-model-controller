@@ -10,19 +10,19 @@
 </h1>
 <main id="main-app">
 
-        @foreach ($movies as $movie)
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">{{$movie->title}}</h4>
-                    <p class="card-subtitle text-body-secondary">
-                        Date: {{$movie->date}}
-                    </p>
-                    <p class="card-text">
-                        Average vote: {{$movie->vote}}
-                    </p>
-                </div>
+    @foreach ($movies as $movie)
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{$movie->title}}</h4>
+                <p class="card-subtitle text-body-secondary">
+                    Date: {{$movie->date}}
+                </p>
+                <p class="card-text">
+                    Average vote: {{$movie->vote}}
+                </p>
             </div>
-        @endforeach
+        </div>
+    @endforeach
 
 </main>
 @endsection
