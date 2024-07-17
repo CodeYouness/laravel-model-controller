@@ -5,24 +5,24 @@
 @endsection
 
 @section('main-content')
+<h1>
+    MovieList
+</h1>
 <main id="main-app">
-    <h1>
-        MovieList
-    </h1>
-    <ul>
+
         @foreach ($movies as $movie)
-            <li class="card">
+            <div class="card">
                 <div class="card-body">
-                <h4 class="card-title">{{$movie->title}}</h4>
-                <p class="card-subtitle text-body-secondary">
-                    Date: {{$movie->date}}
-                </p>
-                <p class="card-text">
-                    Average vote: {{$movie->vote}}
-                </p>
+                    <h4 class="card-title">{{$movie->title}}</h4>
+                    <p class="card-subtitle text-body-secondary">
+                        Date: {{$movie->date}}
+                    </p>
+                    <p class="card-text">
+                        Average vote: {{$movie->vote}}
+                    </p>
                 </div>
-            </li>
+            </div>
         @endforeach
-    </ul>
+
 </main>
 @endsection
