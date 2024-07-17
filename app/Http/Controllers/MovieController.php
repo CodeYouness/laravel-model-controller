@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Movie;
 use Illuminate\Http\Request;
 
 class MovieController extends Controller
@@ -9,7 +10,7 @@ class MovieController extends Controller
     //
     public function home(){
 
-        $movie = [];
-        return view('pages.home', compact('movie'));
+        $movies = Movie::all();
+        return view('pages.home', compact('movies'));
     }
 }
