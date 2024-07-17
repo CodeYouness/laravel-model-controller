@@ -11,7 +11,7 @@
 <main id="main-app">
 
     @foreach ($movies as $movie)
-        <div class="card">
+        <div class="card mb-3">
             <div class="card-body">
                 <h4 class="card-title">{{$movie->title}}</h4>
                 <p class="card-subtitle text-body-secondary">
